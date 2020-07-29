@@ -15,10 +15,10 @@ const connect = function () {
   //handle event for connection
   conn.on("connect", () => {
     console.log(`Successfully connected to game server`);
+    //send name to the server
+    conn.write("Name: SNK");
+    // Movement
   });
-
-  //send name to the server
-  conn.write("Name: DEC");
 
   // Listen for data
   conn.on("data", (data) => {
