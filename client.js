@@ -16,7 +16,7 @@ const connect = function () {
   conn.on("connect", () => {
     console.log(`Successfully connected to game server`);
     //send name to the server
-    conn.write("Name: SNK");
+    conn.write("Name: DEC");
     // Movement
   });
 
